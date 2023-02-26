@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                margin-left: 100px;
+                margin-top: 100px;
+            }
+            h4 {
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sam Wilson's Autograder</h1>
+            <br>
+            <div>
+            <h3>Upload assignment here</h3>
+            <form method= "POST" enctype='multipart/form-data'>
+            {{form.hidden_tag()}}
+            {{form.file()}}
+            {{form.submit()}}
+            </form>
+        </div>
+    </body>
+</html>
